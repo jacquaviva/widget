@@ -1,0 +1,7 @@
+function calculateVolume() {
+  var length = document.getElementById("length").value;
+  var width = document.getElementById("width").value;
+  var height = document.getElementById("height").value;
+  var volume = length * width * height;
+  alert("The volume is: " + volume + " cubic inches");
+}
