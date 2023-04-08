@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Volume Calculator</title>
+  <script>
+    function calculateVolume() {
+      var length = document.getElementById("length").value;
+      var width = document.getElementById("width").value;
+      var height = document.getElementById("height").value;
+      var volume = length * width * height;
+      alert("The volume is: " + volume + " cubic inches");
+    }
+  </script>
+</head>
+<body>
+  <form>
+    Length: <input type="number" id="length" name="length" /><br />
+    Width: <input type="number" id="width" name="width" /><br />
+    Height: <input type="number" id="height" name="height" /><br />
+    <input type="button" value="Calculate" onclick="calculateVolume()" />
+  </form>
+</body>
+</html>
